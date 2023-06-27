@@ -34,7 +34,7 @@ function Header() {
                   height={20}
                   className="w-8 h-8 rounded-full object-cover "
                 />
-                <span className="bg-slate-800 text-yellow-500 rounded-md py-1 px-2 mx-2 cursor-pointer text-sm">Logout</span>
+                <span className="bg-slate-800 text-white rounded-md py-1 px-2 mx-2 cursor-pointer text-sm">Logout</span>
               </div>
             </>
           ) : (
