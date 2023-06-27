@@ -34,14 +34,14 @@ export default function Home() {
       <div className="w-screen bg-gray-900">
         <Subheader
           title="Top 8"
-          subtitle="Take a dip look"
+          subtitle="Our African Print"
           className="w-full max-w-5xl mx-auto bg-gray-900 py-4"
           titleclass="text-white"
           subtitleclass="text-white"
         />
       </div>
       <div className="w-screen bg-gray-900 min-h-[100vh]">
-        <div className="w-full grid grid-cols-1 md:grid-cols-4 gap-2 px-2 py-2">
+        <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 md:pl-12 md:px-0 px-2 gap-2 py-2">
           <ProductCard img="/banner1.jpg" />
           <ProductCard img="/banner2.jpg" />
           <ProductCard img="/banner1.jpg" />
@@ -62,15 +62,63 @@ export default function Home() {
         />
       </div>
       <div className="w-screen bg-lime-200 min-h-[100vh]">
-        <div className="w-full grid grid-cols-1 md:grid-cols-4 gap-2 px-2 py-2">
-          <ProductCard img="/banner1.jpg" infoclass="bg-gray-500" />
-          <ProductCard img="/banner2.jpg" infoclass="bg-gray-500"/>
-          <ProductCard img="/banner1.jpg" infoclass="bg-gray-500"/>
-          <ProductCard img="/banner2.jpg" infoclass="bg-gray-500"/>
-          <ProductCard img="/banner1.jpg" infoclass="bg-gray-500"/>
-          <ProductCard img="/banner2.jpg" infoclass="bg-gray-500"/>
-          <ProductCard img="/banner1.jpg" infoclass="bg-gray-500"/>
-          <ProductCard img="/banner1.jpg" infoclass="bg-gray-500"/>
+        <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 md:pl-12 md:px-0 px-2 gap-2 py-2">
+          <ProductCard
+            img="/shirt1.jpg"
+            infoclass="bg-white shadow-lg text-gray-700"
+            title="Sweet shirt"
+            price="4,500"
+            discount="5,500"
+          />
+          <ProductCard
+            img="/shirt2.jpg"
+            infoclass="bg-white shadow-lg text-gray-700"
+            title="Just say it"
+            price="4,500"
+            discount="5,500"
+          />
+          <ProductCard
+            img="/shirt3.jpg"
+            infoclass="bg-white shadow-lg text-gray-700"
+            title="Love all"
+            price="4,500"
+            discount="5,500"
+          />
+          <ProductCard
+            img="/shirt4.jpg"
+            infoclass="bg-white shadow-lg text-gray-700"
+            title="Indescribable"
+            price="4,500"
+            discount="5,500"
+          />
+          <ProductCard
+            img="/shirt5.jpg"
+            infoclass="bg-white shadow-lg text-gray-700"
+            title="Shirt it out"
+            price="4,500"
+            discount="5,500"
+          />
+          <ProductCard
+            img="/shirt6.jpg"
+            infoclass="bg-white shadow-lg text-gray-700"
+            title="Create awesome"
+            price="4,500"
+            discount="5,500"
+          />
+          <ProductCard
+            img="/shirt7.jpg"
+            infoclass="bg-white shadow-lg text-gray-700"
+            title="Just made"
+            price="4,500"
+            discount="5,500"
+          />
+          <ProductCard
+            img="/shirt9.jpg"
+            infoclass="bg-white shadow-lg text-gray-700"
+            title="All to him"
+            price="4,500"
+            discount="5,500"
+          />
         </div>
       </div>
     </main>
