@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 function Header() {
  const router = useRouter();
  
-  const auth =true;
+  const auth = false;
   return (
     <div className="w-full bg-amber-200 py-2">
       <div className="w-full mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-center md:justify-between ">
@@ -40,7 +40,7 @@ function Header() {
           ) : (
             <>
               <div className="flex items-center justify-center space-x-2">
-                <span onClick={()=>router.push('/login')} className="cursor-pointer">Sign-In</span>
+                <span onClick={()=>router.push('/logininterface')} className="cursor-pointer">Sign-In</span>
                 {/* <Image
                   src="/profilepics.jpg"
                   alt="profilepics"
