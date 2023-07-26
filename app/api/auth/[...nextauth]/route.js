@@ -58,7 +58,7 @@ const handler = NextAuth({
       session.user.id = sessionUser._id.toString();
       return session;
     },
-    async signIn({ provider, profile, email }) {
+    async signIn({ provider, profile, email, callbackUrl }) {
       try {
         await connectToDB();
         if (provider === "credentials") {
@@ -73,10 +73,19 @@ const handler = NextAuth({
             });
           }
         }
+        // Use the callbackUrl here if needed
+        console.log(callbackUrl);
         return true;
       } catch (error) {
         console.log(error);
         return false;
+      }
+    },
+    async redirect({ url, baseUrl }) {
+      if (url.startsWith(baseUrl)) {
+        return url;
+      } else {
+        return "/";
       }
     },
   },

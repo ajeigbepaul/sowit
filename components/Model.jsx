@@ -1,11 +1,21 @@
 "use client";
-import Video from "../public/sowitvideo.mp4";
+
+import Image from "next/image";
+
+// import Video from "../public/sowitvideo.mp4";
 function Model() {
   return (
-    <div className="h-[70vh] w-full">
-      <video autoPlay loop className="h-full w-full object-cover">
+    <div className="h-[70vh] w-full bg-black">
+      {/* <video autoPlay loop className="h-full w-full object-cover">
         <source src={Video} type="video/mp4" />
-      </video>
+      </video> */}
+      <Image
+        src="/fashionbg2.jpg"
+        alt="fashionbg"
+        width={500}
+        height={500}
+        className="w-full object-contain h-full "
+      />
     </div>
   );
 }

@@ -20,9 +20,10 @@ import banner3 from "../public/banner3.jpg";
 import Image from 'next/image'
 
 const banner = [
-  { name: "Men suit", image: '/banner1.jpg' },
-  { name: "Men suit pro", image: '/banner2.jpg' },
-  { name: "Men suit intense", image:'/banner3.jpg' },
+  { name: "Men suit", image: "/banner1.jpg" },
+  { name: "Men suit pro", image: "/banner2.jpg" },
+  { name: "Women classic", image: "/femaleexc4.jpg" },
+  { name: "Only the best", image: "/fashionwork.jpg" },
 ];
 SwiperCore.use([EffectCoverflow, Pagination, Autoplay, Navigation, EffectFade]);
 function Banner() {

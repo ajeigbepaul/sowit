@@ -14,10 +14,10 @@ function ProductCard({ img, infoclass, title, price, discount }) {
       <div
         className={`bg-blue-200 w-full py-3 px-2 mt-1 flex flex-col ${infoclass}`}
       >
-        {title && <h2 className="font-semibold">{title}</h2>}
+        {title && <h2 className="font-semibold text-sm">{title}</h2>}
         <div className="w-full flex">
          {price &&  <div className="w-full flex flex-col">
-            <span className="text-xl font-bold">#{price}</span>
+            <span className="text-md font-bold">#{price}</span>
             <span className="text-sm line-through">#{discount}</span>
           </div>}
           {price && <div className="rounded-lg bg-black px-2 flex items-center justify-center w-10 h-10">
