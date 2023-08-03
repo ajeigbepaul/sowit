@@ -34,14 +34,28 @@ function Header() {
           {auth ? (
             <>
               <div className="flex items-center justify-center space-x-2">
-                <span>{auth?.email.substring(0,5)}...{auth?.email.slice(-3)}</span>
-                <Image
-                  src={`${auth?.image}` || "profilepics.jpg"}
-                  alt="profilepics"
-                  width={20}
-                  height={20}
-                  className="w-8 h-8 rounded-full object-cover "
-                />
+                <span>
+                  {auth?.email.substring(0, 5)}...{auth?.email.slice(-3)}
+                </span>
+
+                {auth.image ? (
+                  <Image
+                    src={user?.image}
+                    alt="profilepics"
+                    width={20}
+                    height={20}
+                    className="w-8 h-8 rounded-full object-cover "
+                  />
+                ) : (
+                  <Image
+                    src={"/profilepics.jpg"}
+                    alt="profilepics"
+                    width={20}
+                    height={20}
+                    className="w-8 h-8 rounded-full object-cover "
+                  />
+                )}
+
                 <span
                   className="bg-slate-800 text-white rounded-md py-1 px-2 mx-2 cursor-pointer text-sm"
                   onClick={signOut}
@@ -59,13 +73,13 @@ function Header() {
                 >
                   Sign-In
                 </span>
-                {/* <Image
+                <Image
                   src="/profilepics.jpg"
                   alt="profilepics"
                   width={20}
                   height={20}
                   className="w-8 h-8 rounded-full object-cover "
-                /> */}
+                />
                 <FaUser size={24} />
               </div>
             </>

@@ -2,9 +2,8 @@ import Banner from "@/components/Banner";
 import Galleries from "@/components/Galleries";
 import Model from "@/components/Model";
 import Subheader from "@/components/Subheader";
-import ProductCard from '@/components/ProductCard'
+import ProductCard from "@/components/ProductCard";
 import WomenGalleries from "@/components/WomenGalleries";
-
 
 export default function Home() {
   return (
@@ -36,7 +35,7 @@ export default function Home() {
       <div className="w-screen bg-slate-300 min-h-[50vh]">
         <WomenGalleries />
       </div>
-      {/* <div className="w-screen bg-gray-800">
+      <div className="w-screen bg-gray-800">
         <Subheader
           title="Our Runway"
           subtitle="Taking you through our process"
@@ -44,14 +43,85 @@ export default function Home() {
           titleclass="text-orange-300"
           subtitleclass="text-white"
         />
-      </div> */}
+      </div>
+
       <div className="w-screen bg-slate-600 min-h-[70vh]">
         <Model />
       </div>
       <div className="w-screen bg-gray-900">
         <Subheader
           title="Top 8"
-          subtitle="Our African Print"
+          subtitle="Our African (Men) Print"
+          className="w-full max-w-5xl mx-auto bg-gray-900 py-4"
+          titleclass="text-white"
+          subtitleclass="text-white"
+        />
+      </div>
+
+      <div className="w-screen bg-gray-900 min-h-[100vh]">
+        <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 md:pl-12 md:px-0 px-2 gap-2 py-2">
+          <ProductCard
+            img="/menAnkara.jpg"
+            title="Sweet shirt"
+            price="3,000"
+            discount="4,500"
+            infoclass="text-black"
+          />
+          <ProductCard
+            img="/menAnkara2.jpg"
+            title="Sweet shirt"
+            price="4,500"
+            discount="5,500"
+            infoclass="text-black"
+          />
+          <ProductCard
+            img="/menAnkara3.jpeg"
+            title="Sweet shirt"
+            price="40,500"
+            discount="51,500"
+            infoclass="text-black"
+          />
+          <ProductCard
+            img="/menAnkara4.jpeg"
+            title="Sweet shirt"
+            price="14,500"
+            discount="15,500"
+            infoclass="text-black"
+          />
+          <ProductCard
+            img="/maleclothe2.jpg"
+            title="Sweet shirt"
+            price="1,500"
+            discount="2,500"
+            infoclass="text-black"
+          />
+          <ProductCard
+            img="/maleclothe3.jpg"
+            title="Sweet shirt"
+            price="4,500"
+            discount="5,500"
+            infoclass="text-black"
+          />
+          <ProductCard
+            img="/maleclothe4.jpg"
+            title="Sweet shirt"
+            price="4,500"
+            discount="5,500"
+            infoclass="text-black"
+          />
+          <ProductCard
+            img="/maleclothe5.jpg"
+            title="Sweet shirt"
+            price="4,500"
+            discount="5,500"
+            infoclass="text-black"
+          />
+        </div>
+      </div>
+      <div className="w-screen bg-gray-900">
+        <Subheader
+          title="Top 8"
+          subtitle="Our African (Women) Print"
           className="w-full max-w-5xl mx-auto bg-gray-900 py-4"
           titleclass="text-white"
           subtitleclass="text-white"
@@ -60,56 +130,56 @@ export default function Home() {
       <div className="w-screen bg-gray-900 min-h-[100vh]">
         <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 md:pl-12 md:px-0 px-2 gap-2 py-2">
           <ProductCard
-            img="/banner1.jpg"
+            img="/womenPrint1.jpeg"
             title="Sweet shirt"
             price="3,000"
             discount="4,500"
             infoclass="text-black"
           />
           <ProductCard
-            img="/banner2.jpg"
+            img="/womenprint2.jpg"
             title="Sweet shirt"
             price="4,500"
             discount="5,500"
             infoclass="text-black"
           />
           <ProductCard
-            img="/banner1.jpg"
+            img="/womenprint3.jpeg"
             title="Sweet shirt"
             price="40,500"
             discount="51,500"
             infoclass="text-black"
           />
           <ProductCard
-            img="/banner2.jpg"
+            img="/womenprint4.jpeg"
             title="Sweet shirt"
             price="14,500"
             discount="15,500"
             infoclass="text-black"
           />
           <ProductCard
-            img="/banner1.jpg"
+            img="/womenprint5.jpeg"
             title="Sweet shirt"
             price="1,500"
             discount="2,500"
             infoclass="text-black"
           />
           <ProductCard
-            img="/banner2.jpg"
+            img="/womenprint3.jpeg"
             title="Sweet shirt"
             price="4,500"
             discount="5,500"
             infoclass="text-black"
           />
           <ProductCard
-            img="/banner1.jpg"
+            img="/womenprint4.jpeg"
             title="Sweet shirt"
             price="4,500"
             discount="5,500"
             infoclass="text-black"
           />
           <ProductCard
-            img="/banner1.jpg"
+            img="/womenprint5.jpeg"
             title="Sweet shirt"
             price="4,500"
             discount="5,500"
@@ -117,16 +187,17 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="w-screen bg-lime-200">
+      <div className="w-screen bg-white">
         <Subheader
           title="Shirts"
           subtitle="Customized just for you"
-          className="w-full max-w-5xl mx-auto bg-lime-200 py-4"
+          className="w-full max-w-5xl mx-auto bg-white py-4"
           titleclass="text-gray-900"
           subtitleclass="text-gray-900"
         />
       </div>
-      <div className="w-screen bg-lime-200 min-h-[100vh]">
+     
+      <div className="w-screen  min-h-[100vh] customise">
         <div className="w-full max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 md:pl-12 md:px-0 px-2 gap-2 py-2">
           <ProductCard
             img="/shirt1.jpg"

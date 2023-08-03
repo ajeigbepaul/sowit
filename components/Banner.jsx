@@ -14,10 +14,6 @@ import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 import Slider from "./Slider";
 import "../app/swiper.css";
-import banner1 from "../public/banner1.jpg";
-import banner2 from "../public/banner2.jpg";
-import banner3 from "../public/banner3.jpg";
-import Image from 'next/image'
 
 const banner = [
   { name: "Men suit", image: "/banner1.jpg" },
