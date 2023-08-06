@@ -7,14 +7,6 @@ import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 function LoginInterface() {
   const { data: session } = useSession();
   console.log(session?.user?.id);
-  const [providers, setProviders] = useState(null);
-  useEffect(() => {
-    const setProvider = async () => {
-      const response = await getProviders();
-      setProviders(response);
-    };
-    setProvider();
-  }, []);
   return (
     <div className="w-full h-screen bg-slate-900 flex items-center justify-center text-white overflow-x-hidden">
       <div className="w-full max-w-xs mx-auto flex flex-col items-center justify-center space-y-3 py-2 px-2">
@@ -26,7 +18,7 @@ function LoginInterface() {
           Login with email
         </div>
         <div
-          onClick={() => signIn("google")}
+          onClick={() => signIn("google",{callbackUrl:'http://localhost:3000'})}
           className="py-2 rounded-lg border border-orange-300 px-2 flex items-center cursor-pointer hover:border-white transition-all duration-500"
         >
           <FaGoogle size={18} color="orange" className="mx-2" />

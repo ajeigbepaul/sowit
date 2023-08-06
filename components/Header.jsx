@@ -13,9 +13,13 @@ import {
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { Badge } from "@mui/material";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 function Header() {
   const router = useRouter();
   const { data: session } = useSession();
+  const logOut =()=>{
+    signOut()
+  }
   console.log(session);
   const auth = session?.user;
   return (
@@ -28,7 +32,9 @@ function Header() {
           <FaTwitter size={24} />
         </div>
         <div className="flex flex-1  w-full md:w-2/4 items-center justify-center">
-          <h2>S E W i T</h2>
+          <Link href="/">
+            <h2>S E W i T</h2>
+          </Link>
         </div>
         <div className="flex items-center justify-center w-full md:w-1/4 ">
           {auth ? (
@@ -40,7 +46,7 @@ function Header() {
 
                 {auth.image ? (
                   <Image
-                    src={user?.image}
+                    src={auth?.image}
                     alt="profilepics"
                     width={20}
                     height={20}
@@ -58,7 +64,7 @@ function Header() {
 
                 <span
                   className="bg-slate-800 text-white rounded-md py-1 px-2 mx-2 cursor-pointer text-sm"
-                  onClick={signOut}
+                  onClick={logOut}
                 >
                   Logout
                 </span>

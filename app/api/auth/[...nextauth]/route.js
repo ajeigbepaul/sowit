@@ -74,7 +74,7 @@ const handler = NextAuth({
           }
         }
         // Use the callbackUrl here if needed
-        console.log(callbackUrl);
+        //    console.log(callbackUrl);
         return true;
       } catch (error) {
         console.log(error);
